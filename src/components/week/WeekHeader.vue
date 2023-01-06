@@ -5,7 +5,7 @@
     #
   </li>
   <li class="header hmonth">
-    mois
+    månad
   </li>
   <li
     v-for="day in week"
@@ -37,4 +37,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+li {
+  border: 0;
+}
+</style>

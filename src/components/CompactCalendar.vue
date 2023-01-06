@@ -124,7 +124,8 @@ li {
   display: inline;
   text-align: center;
   vertical-align: middle;
-  height: 1.1em;
+  height: 1.3em;
+  padding: 4px;
 }
 
 li:nth-child(10n):after {
@@ -157,6 +158,8 @@ li.hday:nth-child(10n-2) {
 .month {
   display: inline-block;
   width: 4em;
+  border-top: solid 1px#9198e5;
+  border-right: solid 1px#9198e5;
 }
 
 .hday,

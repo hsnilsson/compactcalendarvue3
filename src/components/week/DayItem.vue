@@ -63,7 +63,7 @@ export default {
 
 .firstDay {
   font-weight: bolder;
-  background: linear-gradient(#9198e5, white);
+  background: linear-gradient(to right, #9198e5, white);
   border-left: solid 1px #9198e5;
 }
 .startOfMonth {

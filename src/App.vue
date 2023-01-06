@@ -109,6 +109,7 @@ export default {
       }
 
       this.selectedYear++;
+      document.title = `Kompakta kalendern ${this.selectedYear}`
     },
   },
 };
@@ -200,7 +201,7 @@ footer .wrapper .copyright {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: left;
-    font-size: 1em;
+    font-size: 10px;
   }
 }
 </style>
