@@ -102,6 +102,7 @@ export default {
       }
 
       this.selectedYear--;
+      document.title = `Kompakta kalendern ${this.selectedYear}`;
     },
     plus: function () {
       if (this.selectedYear === null) {
@@ -109,7 +110,7 @@ export default {
       }
 
       this.selectedYear++;
-      document.title = `Kompakta kalendern ${this.selectedYear}`
+      document.title = `Kompakta kalendern ${this.selectedYear}`;
     },
   },
 };
