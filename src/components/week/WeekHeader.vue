@@ -1,37 +1,28 @@
 <template>
-  <li 
-    class="header hweek"
-  >
-    #
-  </li>
-  <li class="header hmonth">
-    mois
-  </li>
-  <li
-    v-for="day in week" 
-    :key="day.id" 
-    class="header hday"
-  >
-    <span>{{ day.toLocaleDateString(undefined, { weekday: 'narrow' }) }}</span>
+  <li class="header hweek">#</li>
+  <li class="header hmonth">{{ $t("libelle.mois") }}</li>
+  <li v-for="day in week" :key="day.id" class="header hday">
+    <span>{{ day.toLocaleDateString(undefined, { weekday: "narrow" }) }}</span>
   </li>
   <li />
 </template>
 <script>
 export default {
   props: {
-    week: Array,
+    week: {
+      type: Array,
+      default: () => {
+        return [];
+      },
+    },
   },
   computed: {
-    changedMonth: function() {
-      return this.week.find((day) => day.getDate() == 1) !== undefined
-        ? true
-        : false
+    changedMonth: function () {
+      return this.week.find((day) => day.getDate() == 1) !== undefined;
     },
-    lastDay: function() {
-      return this.week[6]
+    lastDay: function () {
+      return this.week[6];
     },
   },
-}
+};
 </script>
-
-<style scoped></style>
